@@ -38,16 +38,6 @@ Open **`users.txt`** and add your accounts — one per line (bare handle,
 `@handle`, or full profile URL all work; `#` lines are ignored). The file ships
 with commented examples and instructions inside.
 
-`users.txt` is committed as a placeholder, so to keep your real list off GitHub,
-tell git to ignore your local edits to it (run this once):
-
-```bash
-git update-index --skip-worktree users.txt
-```
-
-Now you can edit `users.txt` freely and it will never be committed or pushed.
-(To undo: `git update-index --no-skip-worktree users.txt`.)
-
 ## 3. Seed (recommended, one time)
 
 Mark every user's *current* posts as already-liked so the app doesn't fire off a
