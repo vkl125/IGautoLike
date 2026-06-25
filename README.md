@@ -34,15 +34,19 @@ detects the session it saves it and exits.
 
 ## 2. Add target users
 
-Create `users.txt` from the template and add your accounts — one per line. Bare
-handle, `@handle`, or full profile URL all work; `#` lines are ignored.
+Open **`users.txt`** and add your accounts — one per line (bare handle,
+`@handle`, or full profile URL all work; `#` lines are ignored). The file ships
+with commented examples and instructions inside.
+
+`users.txt` is committed as a placeholder, so to keep your real list off GitHub,
+tell git to ignore your local edits to it (run this once):
 
 ```bash
-cp users.example.txt users.txt    # then edit users.txt with your accounts
+git update-index --skip-worktree users.txt
 ```
 
-`users.txt` is git-ignored, so your real list never gets committed.
-`users.example.txt` is just the public template.
+Now you can edit `users.txt` freely and it will never be committed or pushed.
+(To undo: `git update-index --no-skip-worktree users.txt`.)
 
 ## 3. Seed (recommended, one time)
 

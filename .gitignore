@@ -4,9 +4,9 @@ node_modules/
 # Live browser session (cookies = account access) — NEVER commit
 storage/
 
-# Your real target list (personal data) — git-ignored so it never publishes.
-# Fresh clones copy users.example.txt -> users.txt.
-users.txt
+# Note: users.txt IS committed (as a placeholder). Your real accounts go in it
+# locally; that copy is protected from accidental commits via:
+#   git update-index --skip-worktree users.txt
 
 # Logs (may contain account activity)
 *.log

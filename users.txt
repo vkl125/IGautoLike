@@ -1,0 +1,13 @@
+# Add the Instagram accounts you want to auto-like here — one per line.
+#
+# Any of these formats works:
+#   nasa
+#   @nasa
+#   https://www.instagram.com/nasa/
+# Lines starting with # and blank lines are ignored.
+#
+# Replace the commented examples below with your own accounts:
+#
+# nasa
+# natgeo
+# instagram
