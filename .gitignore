@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Live browser session (cookies = account access) — NEVER commit
+storage/
+
+# Your real target list (personal data) — keep local only.
+# users.txt is committed as a placeholder; put your real accounts in
+# users.local.txt, which the app prefers and which is never committed.
+users.local.txt
+
+# Logs (may contain account activity)
+*.log
+
+# Secrets / local env
+.env
+.env.*
+*.local
+
+.DS_Store

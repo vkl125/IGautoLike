@@ -1,0 +1,23 @@
+{
+  "name": "ig-autolike",
+  "version": "1.0.0",
+  "description": "Auto-likes the recent posts of a list of Instagram users via a real browser session (Playwright). Polls on an interval to stay gentle and avoid lockouts.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "login": "tsx src/index.ts --login-only",
+    "seed": "tsx src/index.ts --seed",
+    "once": "tsx src/index.ts --once"
+  },
+  "dependencies": {
+    "playwright": "1.59.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.0"
+  }
+}

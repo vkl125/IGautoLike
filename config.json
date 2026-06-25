@@ -1,0 +1,17 @@
+{
+  "postsToCheck": 10,
+  "pollIntervalMinutes": 45,
+  "headless": false,
+
+  "maxLikesPerHour": 30,
+  "maxLikesPerDay": 200,
+
+  "delaySecondsBetweenLikes": [25, 70],
+  "delaySecondsBetweenUsers": [45, 120],
+
+  "skipReels": false,
+  "loginTimeoutMinutes": 10,
+
+  "activeHours": { "start": "09:00", "end": "23:00" },
+  "pollJitterPercent": 40
+}
