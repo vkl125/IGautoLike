@@ -4,10 +4,9 @@ node_modules/
 # Live browser session (cookies = account access) — NEVER commit
 storage/
 
-# Your real target list (personal data) — keep local only.
-# users.txt is committed as a placeholder; put your real accounts in
-# users.local.txt, which the app prefers and which is never committed.
-users.local.txt
+# Your real target list (personal data) — git-ignored so it never publishes.
+# Fresh clones copy users.example.txt -> users.txt.
+users.txt
 
 # Logs (may contain account activity)
 *.log

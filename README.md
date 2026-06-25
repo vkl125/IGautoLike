@@ -34,14 +34,15 @@ detects the session it saves it and exits.
 
 ## 2. Add target users
 
-Put your accounts in **`users.local.txt`** (one per line — bare handle,
-`@handle`, or full profile URL all work). The app reads `users.local.txt` if it
-exists and falls back to `users.txt` otherwise. `users.local.txt` is git-ignored,
-so your real list never gets committed; `users.txt` stays a public placeholder.
+Create `users.txt` from the template and add your accounts — one per line. Bare
+handle, `@handle`, or full profile URL all work; `#` lines are ignored.
 
 ```bash
-cp users.txt users.local.txt   # then edit users.local.txt with your accounts
+cp users.example.txt users.txt    # then edit users.txt with your accounts
 ```
+
+`users.txt` is git-ignored, so your real list never gets committed.
+`users.example.txt` is just the public template.
 
 ## 3. Seed (recommended, one time)
 

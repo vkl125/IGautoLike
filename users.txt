@@ -1,7 +1,0 @@
-# Add the Instagram accounts you want to auto-like — one per line.
-# Bare handle, @handle, or full profile URL all work. # lines are ignored.
-#
-# Example:
-# nasa
-# natgeo
-# https://www.instagram.com/instagram/

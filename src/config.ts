@@ -60,9 +60,13 @@ export function parseUsername(line: string): string | null {
 }
 
 export function loadUsers(): string[] {
-  // Prefer the private, git-ignored list if present; fall back to users.txt.
-  const localPath = join(ROOT, "users.local.txt");
-  const path = existsSync(localPath) ? localPath : join(ROOT, "users.txt");
+  const path = join(ROOT, "users.txt");
+  if (!existsSync(path)) {
+    throw new Error(
+      "users.txt not found. Create it with `cp users.example.txt users.txt`, " +
+        "then add your accounts."
+    );
+  }
   const raw = readFileSync(path, "utf8");
   const users = raw
     .split("\n")

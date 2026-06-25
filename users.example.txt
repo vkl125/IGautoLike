@@ -1,0 +1,9 @@
+# Template. Copy this to users.txt and add your own accounts:
+#     cp users.example.txt users.txt
+#
+# One Instagram account per line — bare handle, @handle, or full profile URL.
+# Lines starting with # and blank lines are ignored.
+
+nasa
+natgeo
+https://www.instagram.com/instagram/
